@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <main class="flexbox flex-column">
+        <div id="game-title" class="relative">
+            <h1>Rock Paper Scissors</h1>
+        </div>
+        <div class="flexbox flex-row flex-justify-space-evenly flex-align-center" id="main">
+            <div class="flexbox flex-column flex-align-center">
+                <div>
+                    <h2 class="name">Player</h2>
+                </div>
+                <div class="flexbox flex-column">
+                    <div class="empty-circle-border"></div>
+                    <div class="empty-circle-border"></div>
+                    <div class="empty-circle-border"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flexbox flex-column">
+                    <div>
+                        <div id="computer-screen" class="flexbox flex-row flex-justify-center flex-align-center">
+                            
+                        </div>
+                    </div>
+                    <div class="flexbox flex-row flex-justify-space-evenly">
+                        <div class="flexbox flex-row flex-justify-center">
+                            <button id="rock" class="player-button"><i class="em em-fist rock-icon"></i></button>
+                        </div>
+                        <div>
+                            <button id="scissors" class="player-button"><i class="em em-v scissors-icon"></i></button>
+                        </div>
+                        <div>
+                            <button id="paper" class="player-button"><i class="em em-raised_hand_with_fingers_splayed paper-icon"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="announcer">
+                    <h1>Select Your Hand!</h1>
+                </div>
+            </div>
+            <div class="flexbox flex-column">
+                <div>
+                    <h2 class="name">Computer</h2>
+                </div>
+                <div class="flexbox flex-column flex-align-center">
+                    <div class="empty-circle-border"></div>
+                    <div class="empty-circle-border"></div>
+                    <div class="empty-circle-border"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
